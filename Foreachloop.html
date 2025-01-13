@@ -1,0 +1,22 @@
+<html>
+<head> <title>Array Loop Example</title></head>
+<body>
+<h2>Looping Through an Array in JavaScript</h2>
+<button onclick="loopThroughArray()">Loop Through 
+Array</button>
+<p id="output"></p>
+<script>
+ // Example array of fruits
+ let fruits = ["Apple", "Banana", "Orange", "Mango", "Pineapple"];
+ function loopThroughArray() {
+ let output = ""; 
+ // Using a for loop to iterate through the array
+ for (let i = 0; i < fruits.length; i++) {
+ output += fruits[i] + "<br>"; // Append each fruit to the output
+ }
+ // Displaying the result in the paragraph with id "output"
+ document.getElementById("output").innerHTML = output;
+ }
+</script>
+</body>
+</html>
